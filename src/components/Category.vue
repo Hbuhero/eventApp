@@ -55,7 +55,7 @@
 
     .main {
         margin-top: 100px;
-        background-color: rgba(250, 235, 215, 0.5);
+        background-color: rgba(255, 182, 193, 0.1);
         margin-bottom: 100px;
     }
 
@@ -79,14 +79,18 @@
     
 }
 
+edit the card container to be good
+
 */
+
+
 
 .categories {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     align-content: center;
-    padding-left: 360px;
+    padding-left: 260px;
     padding-right: 200px;
     padding-top: 20px;
     padding-bottom: 40px;
