@@ -1,180 +1,189 @@
-<script setup>
-
-    const ok = () => {
-        console.log("ok");
-        
-    }
-</script>
-
 <template>
-    <div class="main">
-        <div class="header">
-            <h1 class="underline" style="color: black; font-weight: bold; ">Upcoming Events</h1>
+    <div class="events-container">
+    <div class="event-card">
+        <div class="img">
+            <img src="../assets/img/kisuke.webp" alt="">
+            <div class="overlay-text">Education</div>
         </div>
-        <div class="categories">
-            <div class="category" @click="ok">
-                <button class="category-button">All</button>
+        <div class="event-text">
+            <div class="event-title">
+                <p>Lorem ipsum dolor sit.</p>
             </div>
-            <div class="category" @click="ok">
-                <button class="category-button">Concert</button>
+            <div class="time">
+                <img src="../assets/icons/clock.png" alt="">
+                <p>Thu, September 28, 2028, 7:30 am</p>
             </div>
-            <div class="category" @click="ok">
-                <button class="category-button">Business</button>
-            </div>
-            <div class="category" @click="ok">
-                <button class="category-button">Finance</button>
-            </div>
-            <div class="category" @click="ok">
-                <button class="category-button">Agriculture</button>
-            </div>
-            <div class="category" @click="ok">
-                <button class="category-button">Mining</button>
-            </div>
-            <div class="category" @click="ok">
-                <button class="category-button">Computer</button>
-            </div>
-            <div class="category" @click="ok">
-                <button class="category-button">Crypto</button>
+            <div class="location">
+                <img src="../assets/icons/location.png" alt="">
+                <p>Fresno , California</p>
             </div>
         </div>
-        <div class="events-container">
-            <div class="event-card">
-                <div class="img">
-                    <img src="../assets/img/kisuke.webp" alt="">
-                    <div class="overlay-text">Education</div>
-                </div>
-                <div class="event-text">
-                    <div class="event-title">
-                        <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                    <div class="time">
-                        <img src="../assets/icons/clock.png" alt="">
-                        <p>Thu, September 28, 2028, 7:30 am</p>
-                    </div>
-                    <div class="location">
-                        <img src="../assets/icons/location.png" alt="">
-                        <p>Fresno , California</p>
-                    </div>
-                </div>  
-            </div>
-            <div class="event-card">
-                <div class="img">
-                    <img src="../assets/img/kisuke.webp" alt="">
-                    <div class="overlay-text">Education</div>
-                </div>
-                <div class="event-text">
-                    <div class="event-title">
-                        <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                    
-                    <div class="time">
-                        <img src="../assets/icons/clock.png" alt="">
-                        <p>Thu, September 28, 2028, 7:30 am</p>
-                    </div>
-                    <div class="location">
-                        <img src="../assets/icons/location.png" alt="">
-                        <p>Fresno , California</p>
-                    </div>
-                </div>  
-            </div>
-            <div class="event-card">
-                <div class="img">
-                    <img src="../assets/img/kisuke.webp" alt="">
-                    <div class="overlay-text">Education</div>
-                </div>
-                <div class="event-text">
-                    <div class="event-title">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="time">
-                        <img src="../assets/icons/clock.png" alt="">
-                        <p>Thu, September 28, 2028, 7:30 am</p>
-                    </div>
-                    <div class="location">
-                        <img src="../assets/icons/location.png" alt="">
-                        <p>Fresno , California</p>
-                    </div>
-                </div>  
-            </div>
+        <div class="button">
+            <button>View</button> 
         </div>
+            
+    </div>
+    <div class="event-card">
+        <div class="img">
+            <img src="../assets/img/kisuke.webp" alt="">
+            <div class="overlay-text">Education</div>
+        </div>
+        <div class="event-text">
+            <div class="event-title">
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="time">
+                <img src="../assets/icons/clock.png" alt="">
+                <p>Thu, September 28, 2028, 7:30 am</p>
+            </div>
+            <div class="location">
+                <img src="../assets/icons/location.png" alt="">
+                <p>Fresno , California</p>
+            </div>
+            <div class="button">
+            <button>View</button> 
+        </div>
+        </div>  
+    </div>
+    <div class="event-card">
+        <div class="img">
+            <img src="../assets/img/kisuke.webp" alt="">
+            <div class="overlay-text">Education</div>
+        </div>
+        <div class="event-text">
+            <div class="event-title">
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+            
+            <div class="time">
+                <img src="../assets/icons/clock.png" alt="">
+                <p>Thu, September 28, 2028, 7:30 am</p>
+            </div>
+            <div class="location">
+                <img src="../assets/icons/location.png" alt="">
+                <p>Fresno , California</p>
+            </div>
+            <div class="button">
+            <button>View</button> 
+        </div>
+        </div>  
+    </div>
+    <div class="event-card">
+        <div class="img">
+            <img src="../assets/img/kisuke.webp" alt="">
+            <div class="overlay-text">Education</div>
+        </div>
+        <div class="event-text">
+            <div class="event-title">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="time">
+                <img src="../assets/icons/clock.png" alt="">
+                <p>Thu, September 28, 2028, 7:30 am</p>
+            </div>
+            <div class="location">
+                <img src="../assets/icons/location.png" alt="">
+                <p>Fresno , California</p>
+            </div>
+            <div class="button">
+            <button>View</button> 
+        </div>
+        </div> 
+    </div>
+    <div class="event-card">
+        <div class="img">
+            <img src="../assets/img/kisuke.webp" alt="">
+            <div class="overlay-text">Education</div>
+        </div>
+        <div class="event-text">
+            <div class="event-title">
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="time">
+                <img src="../assets/icons/clock.png" alt="">
+                <p>Thu, September 28, 2028, 7:30 am</p>
+            </div>
+            <div class="location">
+                <img src="../assets/icons/location.png" alt="">
+                <p>Fresno , California</p>
+            </div>
+            <div class="button">
+            <button>View</button> 
+        </div>
+        </div>  
+    </div><div class="event-card">
+        <div class="img">
+            <img src="../assets/img/kisuke.webp" alt="">
+            <div class="overlay-text">Education</div>
+        </div>
+        <div class="event-text">
+            <div class="event-title">
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="time">
+                <img src="../assets/icons/clock.png" alt="">
+                <p>Thu, September 28, 2028, 7:30 am</p>
+            </div>
+            <div class="location">
+                <img src="../assets/icons/location.png" alt="">
+                <p>Fresno , California</p>
+            </div>
+            <div class="button">
+            <button>View</button> 
+        </div>
+        </div>  
+    </div><div class="event-card">
+        <div class="img">
+            <img src="../assets/img/kisuke.webp" alt="">
+            <div class="overlay-text">Education</div>
+        </div>
+        <div class="event-text">
+            <div class="event-title">
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="time">
+                <img src="../assets/icons/clock.png" alt="">
+                <p>Thu, September 28, 2028, 7:30 am</p>
+            </div>
+            <div class="location">
+                <img src="../assets/icons/location.png" alt="">
+                <p>Fresno , California</p>
+            </div>
+            <div class="button">
+            <button>View</button> 
+        </div>
+        </div>  
+    </div>      
     </div>
 </template>
 
 <style scoped>
-    .header {
+.events-container {
+        width: 80%;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .underline {
+        flex-wrap: wrap;
         position: relative;
-        padding-bottom: 10px;
-        color: black;
-    }
-
-    .underline::after {
-        content: "";
-        position: absolute;
-        left: 90px;
-        bottom: 0;
-        width: 80px;
-        height: 3px;
-        background-color: red;
-    }
-
-    .categories {
-        color: black;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-top: 40px;
-        margin-bottom: 50px;
-        /* justify-content: space-between; */
-    }
-
-    .category-button{
-        text-align: center;
-        margin-right: 20px;
-        font-size: medium;
-        border: 0;
-        background-color: transparent;
-    }
-
-    .category-button:hover{
-        color: orangered;
-    }
-
-    .category-button:active{
-        color: orangered;
-    }
-
-    .category button::selection{
-        background-color: red;
-    }
-
-    .events-container {
-        display: flex;
-        /* flex-wrap: wrap; */
-        align-items: center;
-        justify-content: center;
+        left: 20%;
         padding-bottom: 30px;
-        gap: 16px;
+        gap: 50px;
     }
 
     .event-card {
-        width: 400px;
-        height: 500px;
+        position: relative;
+        width: 25%;
+        height: 450px;
         border: 0.5px solid transparent;
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         overflow: hidden;
-        margin-right: 3%;
+        
+        
         /* flex: 2 2 calc(33.333% - 16px);
         box-sizing: border-box; */
+    }
+
+    .event-card:hover{
+        border: 0.1px solid lightcoral
     }
 
     .event-title p {
@@ -183,12 +192,12 @@
         padding-left: 15px; 
         font-weight: bold; 
         margin-bottom: 20px;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .img {
         width: 100%;
-        height: 55%;
+        height: 50%;
         position: relative;
         /* display: inline-block; */
     }
@@ -212,6 +221,7 @@
     }
 
     .time, .location {
+        padding-bottom: 20px;
         margin-bottom: 10px;
         display: flex;
         width: 100%;
@@ -231,4 +241,42 @@
         margin-top: 11px;
         
     }
+
+    .button {
+        padding: 12px;
+        position: absolute;
+        right: 5px;
+        
+    }
+
+    /* From Uiverse.io by aasisodiya */ 
+button {
+    text-align: center;
+ background-color: #eee;
+ border: none;
+ padding: 1rem;
+ font-size: 1rem;
+ width: 5em;
+ height: 3em;
+ border-radius: 1rem;
+ color: lightcoral;
+ cursor: pointer;
+}
+
+button:active {
+ color: white;
+ box-shadow: 0 0.2rem #dfd9d9;
+ transform: translateY(0.2rem);
+}
+
+button:hover:not(:disabled) {
+ background: lightcoral;
+ color: white;
+ text-shadow: 0 0.1rem #bcb4b4;
+}
+
+button:disabled {
+ cursor: auto;
+ color: grey;
+}
 </style>

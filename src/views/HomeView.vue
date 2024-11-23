@@ -1,16 +1,16 @@
 <script setup>
 import Category from '@/components/Category.vue';
-import Navbar from '@/components/Navbar.vue';
 import Nav1 from '@/components/Nav.vue';
 import Search from '@/components/Search.vue';
+import CategoryButtons from '@/components/CategoryButtons.vue';
 import Events from '@/components/Events.vue';
 </script>
 
 <template>
     <main>
-        <Nav1 />
         <Search />
         <Category />
+        <CategoryButtons />
         <Events />
         <Description /> 
     </main>
