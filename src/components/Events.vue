@@ -1,159 +1,48 @@
+<script setup>
+    import axios from 'axios';
+    import { onMounted, ref } from "vue";
+
+    const events = ref([])
+
+    onMounted(async () => {
+        try {
+            const response  = await axios.get("http://localhost:8080/api/v1/event/all")
+            events.value = response.data.content
+            console.log(events.data[1]);
+            
+        } catch (error) {
+            
+        }
+    })
+</script>
+
 <template>
     <div class="events-container">
-    <div class="event-card">
-        <div class="img">
-            <img src="../assets/img/kisuke.webp" alt="">
-            <div class="overlay-text">Education</div>
-        </div>
-        <div class="event-text">
-            <div class="event-title">
-                <p>Lorem ipsum dolor sit.</p>
+        
+        <div class="event-card" v-for="event in events" :key="event.uuid">
+            <div class="img">
+                <img src="../assets/img/kisuke.webp" alt="">
+                <div class="overlay-text">{{ event.category }}</div>
             </div>
-            <div class="time">
-                <img src="../assets/icons/clock.png" alt="">
-                <p>Thu, September 28, 2028, 7:30 am</p>
-            </div>
-            <div class="location">
-                <img src="../assets/icons/location.png" alt="">
-                <p>Fresno , California</p>
-            </div>
-        </div>
-        <div class="button">
-            <button>View</button> 
-        </div>
-            
-    </div>
-    <div class="event-card">
-        <div class="img">
-            <img src="../assets/img/kisuke.webp" alt="">
-            <div class="overlay-text">Education</div>
-        </div>
-        <div class="event-text">
-            <div class="event-title">
-                <p>Lorem ipsum dolor sit.</p>
-            </div>
-            <div class="time">
-                <img src="../assets/icons/clock.png" alt="">
-                <p>Thu, September 28, 2028, 7:30 am</p>
-            </div>
-            <div class="location">
-                <img src="../assets/icons/location.png" alt="">
-                <p>Fresno , California</p>
+            <div class="event-text">
+                <div class="event-title">
+                    <p>{{event.title}}</p>
+                </div>
+                <div class="time">
+                    <img src="../assets/icons/clock.png" alt="">
+                    <p>{{event.startingDate}}</p>
+                </div>
+                <div class="location">
+                    <img src="../assets/icons/location.png" alt="">
+                    <p>{{event.location}}</p>
+                </div>
             </div>
             <div class="button">
-            <button>View</button> 
+                <button>View</button> 
+            </div>
+                
         </div>
-        </div>  
-    </div>
-    <div class="event-card">
-        <div class="img">
-            <img src="../assets/img/kisuke.webp" alt="">
-            <div class="overlay-text">Education</div>
-        </div>
-        <div class="event-text">
-            <div class="event-title">
-                <p>Lorem ipsum dolor sit.</p>
-            </div>
-            
-            <div class="time">
-                <img src="../assets/icons/clock.png" alt="">
-                <p>Thu, September 28, 2028, 7:30 am</p>
-            </div>
-            <div class="location">
-                <img src="../assets/icons/location.png" alt="">
-                <p>Fresno , California</p>
-            </div>
-            <div class="button">
-            <button>View</button> 
-        </div>
-        </div>  
-    </div>
-    <div class="event-card">
-        <div class="img">
-            <img src="../assets/img/kisuke.webp" alt="">
-            <div class="overlay-text">Education</div>
-        </div>
-        <div class="event-text">
-            <div class="event-title">
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="time">
-                <img src="../assets/icons/clock.png" alt="">
-                <p>Thu, September 28, 2028, 7:30 am</p>
-            </div>
-            <div class="location">
-                <img src="../assets/icons/location.png" alt="">
-                <p>Fresno , California</p>
-            </div>
-            <div class="button">
-            <button>View</button> 
-        </div>
-        </div> 
-    </div>
-    <div class="event-card">
-        <div class="img">
-            <img src="../assets/img/kisuke.webp" alt="">
-            <div class="overlay-text">Education</div>
-        </div>
-        <div class="event-text">
-            <div class="event-title">
-                <p>Lorem ipsum dolor sit.</p>
-            </div>
-            <div class="time">
-                <img src="../assets/icons/clock.png" alt="">
-                <p>Thu, September 28, 2028, 7:30 am</p>
-            </div>
-            <div class="location">
-                <img src="../assets/icons/location.png" alt="">
-                <p>Fresno , California</p>
-            </div>
-            <div class="button">
-            <button>View</button> 
-        </div>
-        </div>  
-    </div><div class="event-card">
-        <div class="img">
-            <img src="../assets/img/kisuke.webp" alt="">
-            <div class="overlay-text">Education</div>
-        </div>
-        <div class="event-text">
-            <div class="event-title">
-                <p>Lorem ipsum dolor sit.</p>
-            </div>
-            <div class="time">
-                <img src="../assets/icons/clock.png" alt="">
-                <p>Thu, September 28, 2028, 7:30 am</p>
-            </div>
-            <div class="location">
-                <img src="../assets/icons/location.png" alt="">
-                <p>Fresno , California</p>
-            </div>
-            <div class="button">
-            <button>View</button> 
-        </div>
-        </div>  
-    </div><div class="event-card">
-        <div class="img">
-            <img src="../assets/img/kisuke.webp" alt="">
-            <div class="overlay-text">Education</div>
-        </div>
-        <div class="event-text">
-            <div class="event-title">
-                <p>Lorem ipsum dolor sit.</p>
-            </div>
-            <div class="time">
-                <img src="../assets/icons/clock.png" alt="">
-                <p>Thu, September 28, 2028, 7:30 am</p>
-            </div>
-            <div class="location">
-                <img src="../assets/icons/location.png" alt="">
-                <p>Fresno , California</p>
-            </div>
-            <div class="button">
-            <button>View</button> 
-        </div>
-        </div>  
-    </div>      
+             
     </div>
 </template>
 
